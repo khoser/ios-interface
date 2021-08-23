@@ -16,16 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS interface" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-CQ-jDY">
-                                <rect key="frame" x="121" y="430" width="172" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nT0-hY-VeE">
+                                <rect key="frame" x="62" y="410" width="290" height="76"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS interface" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-CQ-jDY">
+                                        <rect key="frame" x="20" y="20" width="250" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xLe-CQ-jDY" firstAttribute="leading" secondItem="nT0-hY-VeE" secondAttribute="leading" constant="20" symbolic="YES" id="5d4-qF-6if"/>
+                                    <constraint firstItem="xLe-CQ-jDY" firstAttribute="top" secondItem="nT0-hY-VeE" secondAttribute="top" constant="20" symbolic="YES" id="6nq-Ck-SG0"/>
+                                    <constraint firstItem="xLe-CQ-jDY" firstAttribute="centerX" secondItem="nT0-hY-VeE" secondAttribute="centerX" id="Prj-n7-puI"/>
+                                    <constraint firstItem="xLe-CQ-jDY" firstAttribute="centerY" secondItem="nT0-hY-VeE" secondAttribute="centerY" id="iRa-H2-tLz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nT0-hY-VeE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="38Z-kx-tkh"/>
+                            <constraint firstItem="nT0-hY-VeE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="366" id="DQo-dw-RE1"/>
+                            <constraint firstItem="nT0-hY-VeE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mwe-Hf-5oP"/>
+                            <constraint firstItem="nT0-hY-VeE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vFX-T5-bN1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
